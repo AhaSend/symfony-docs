@@ -100,6 +100,7 @@ via a third-party provider:
 ===================== =============================================== ===============
 Service               Install with                                    Webhook support
 ===================== =============================================== ===============
+`AhaSend`_            ``composer require symfony/ahasend-mailer``     yes
 `Amazon SES`_         ``composer require symfony/amazon-mailer``
 `Azure`_              ``composer require symfony/azure-mailer``
 `Brevo`_              ``composer require symfony/brevo-mailer``       yes
@@ -125,7 +126,7 @@ Service               Install with                                    Webhook su
 
 .. versionadded:: 7.2
 
-    The Mailomat, Mailtrap, Postal and Sweego integrations were introduced in Symfony 7.2.
+    The Mailomat, Mailtrap, Postal, Sweego and AhaSend integrations were introduced in Symfony 7.2.
 
 .. note::
 
@@ -175,6 +176,10 @@ party provider:
 +------------------------+---------------------------------------------------------+
 | Provider               | Formats                                                 |
 +========================+=========================================================+
+| `AhaSend`_             | - API ``ahasend+api://KEY@default``                     |
+|                        | - HTTP n/a                                              |
+|                        | - SMTP ``ahasend+smtp://USERNAME:PASSWORD@default``     |
++------------------------+---------------------------------------------------------+
 | `Amazon SES`_          | - SMTP ``ses+smtp://USERNAME:PASSWORD@default``         |
 |                        | - HTTP ``ses+https://ACCESS_KEY:SECRET_KEY@default``    |
 |                        | - API ``ses+api://ACCESS_KEY:SECRET_KEY@default``       |
@@ -1991,6 +1996,7 @@ the :class:`Symfony\\Bundle\\FrameworkBundle\\Test\\MailerAssertionsTrait`::
    following the redirection and the message will be lost from the mailer event
    handler.
 
+.. _`AhaSend`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Mailer/Bridge/AhaSend/README.md
 .. _`Amazon SES`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Mailer/Bridge/Amazon/README.md
 .. _`Azure`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Mailer/Bridge/Azure/README.md
 .. _`App Password`: https://support.google.com/accounts/answer/185833
