@@ -126,7 +126,7 @@ Service               Install with                                    Webhook su
 
 .. versionadded:: 7.2
 
-    The Mailomat, Mailtrap, Postal, Sweego and AhaSend integrations were introduced in Symfony 7.2.
+    The Mailomat, Mailtrap, Postal and Sweego integrations were introduced in Symfony 7.2.
 
 .. versionadded:: 7.3
 
