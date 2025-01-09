@@ -43,8 +43,12 @@ Sweego         ``mailer.webhook.request_parser.sweego``
 
 .. versionadded:: 7.2
 
-    The ``Mandrill``,  ``Mailomat``, ``Mailtrap``, ``Sweego`` and ``AhaSend`` integrations were introduced in
+    The ``Mandrill``, ``Mailomat``, ``Mailtrap``, and ``Sweego`` integrations were introduced in
     Symfony 7.2.
+
+.. versionadded:: 7.3
+
+    The ``AhaSend`` integration was introduced in Symfony 7.3.
 
 .. note::
 

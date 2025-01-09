@@ -100,7 +100,7 @@ via a third-party provider:
 ===================== =============================================== ===============
 Service               Install with                                    Webhook support
 ===================== =============================================== ===============
-`AhaSend`_            ``composer require symfony/ahasend-mailer``     yes
+`AhaSend`_            ``composer require symfony/aha-send-mailer``    yes
 `Amazon SES`_         ``composer require symfony/amazon-mailer``
 `Azure`_              ``composer require symfony/azure-mailer``
 `Brevo`_              ``composer require symfony/brevo-mailer``       yes
@@ -127,6 +127,10 @@ Service               Install with                                    Webhook su
 .. versionadded:: 7.2
 
     The Mailomat, Mailtrap, Postal, Sweego and AhaSend integrations were introduced in Symfony 7.2.
+
+.. versionadded:: 7.3
+
+    The AhaSend integration was introduced in Symfony 7.3.
 
 .. note::
 
